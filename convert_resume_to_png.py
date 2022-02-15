@@ -4,6 +4,8 @@ from pdf2image import convert_from_path
 import os
 import glob
 
+print('Compiling resume pdf to multiple pngs')
+
 RESUME_FOLDER = './output'
 
 files = glob.glob(RESUME_FOLDER + '/*')
