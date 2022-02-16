@@ -142,25 +142,8 @@
       {Embedded Systems Lab, Northeastern University}{Boston, MA}
       \resumeItemListStart
 
-% Made a novel arch template for gemm and conv
-% Created a novel dataflow design space exploration tool that optimizes template to library of CNN networks
-% written in pytorch
-% CIGAR and TEMPO
-% Model arch template in SystemC
-% Created HERO-T Simulation environment that scans networks and calls HERO-T Simulation
-% Created novel on-chip programmable memory primitive SAMS
-% Developed a layer compiler that can generate data movement descriptor for SAMs
-% Supervised undergrads in   
-  % Integrated model into Xilinx's QEMU+SystemC
-  % Developing verilog implementation for SAMS using Xilinx's stuff
-  % Exploring sched synchronization in inconsistent memory environment
-
-        % \resumeItem{Created a novel neural network accelerator dataflow exploration methodology based on two in house tools CIGAR and TEMPO}
-        % \resumeItem{Used Cnn statistIcs gATherer (CIGAR) tool to prune dataflow design space of convolution accelerators}
         \resumeItem{Developed a SystemC model of a novel Hybrid general matrix multiplication and convolution accelerator (HERO)}
         \resumeItem{Developed a Template Optimization tool (TEMPO) in python that optimizes HERO templates based on available compute resources and a target library of neural networks }
-        % \resumeItem{Used accelerator TEMplate Optimizer (TEMPO) tool to optimize HERO for ~419 real world neural networks}
-        % \resumeItem{Embedded the HERO model in a Python-SystemC based simulation environment (HERO-Sim) that runs a cycle accurate simulation of arbitrary neural network layers written in pytorch to estimate latency and energy consumption}
         \resumeItem{Estimated HERO's latency and energy consumption using a Python-SystemC based simulation environment (HERO-Sim)}
         \resumeItem{Created a SystemC model of a novel programmable memory primitive called Self Addressable Memory (SAM) used in statically scheduling dataflows in neural network accelerator architectures}
         \resumeItem{Implemented a SAM program compiler that generates data movement programs from convolution layer descriptions to orchestrate on-chip data movement between SAMS in HERO}
@@ -170,28 +153,6 @@
           \resumeItem{Integrating HERO into Xilinx's SystemC+QEMU simulation environment}
           \resumeItemListEnd
         \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    % \resumeSubheading
-    %   {Graduate Research Intern}{May 2019 -- July 2019}
-    %   {Southwestern University}{Georgetown, TX}
-    %   \resumeItemListStart
-    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-    %     \resumeItem{Developed a game in Java to test the generated dungeons}
-    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-    %   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -202,7 +163,7 @@
           {\textbf{Integer Linear Program based scheduler for multi-core processors} $|$ \emph{Python, Pyomo, Gurobi}}{2021}
           \resumeItemListStart
             \resumeItem{Implemented an ILP-based scheduling model to schedule applications statically on a multicore processor }
-            \resumeItem{Model was generated using python and the pyomo library and optimized with Gurobi solver }
+            \resumeItem{Model was generated using python and the pyomo library and optimized with the Gurobi solver }
             \resumeItem{Successfully generated optimal schedules for a variety of application sizes and core count configurations}
           \resumeItemListEnd
       % \resumeProjectHeading
@@ -221,7 +182,7 @@
           {\textbf{Darknet Convolution Inference accelerator} $|$ \emph{C, Darknet, Vivado HLS}}{2019}
           \resumeItemListStart
             \resumeItem{Developed a General Matrix Multiplication (GEMM) accelerator using Vivado HLS}
-            \resumeItem{Synthesized accelerator on a Zynq-7020 development board}
+            \resumeItem{Synthesized accelerator on a Zynq-7020 FPGA}
             \resumeItem{Integrated accelerator into Darknet framework}
             \resumeItem{Accelerated inference time of tiny darknet network by a factor of ~2X over CPU Baseline}
           \resumeItemListEnd
