@@ -1,9 +1,9 @@
-main.aux
-main.fdb_latexmk
-main.fls
-main.log
-main.out
-main.synctex.gz
+alysultan.aux
+alysultan.fdb_latexmk
+alysultan.fls
+alysultan.log
+alysultan.out
+alysultan.synctex.gz
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
