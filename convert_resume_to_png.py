@@ -18,7 +18,7 @@ file.write('Resume adapted from https://github.com/sb2nov/resume\n')
 file.close()
 
 # Store Pdf with convert_from_path function
-images = convert_from_path('main.pdf')
+images = convert_from_path('alysultan.pdf')
 
 for i in range(len(images)):
     images[i].save(RESUME_FOLDER + '/page'+ str(i) +'.jpg', 'JPEG')
