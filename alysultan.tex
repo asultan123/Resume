@@ -113,7 +113,7 @@
 
 \begin{center}
     \textbf{\Huge \scshape Aly Sultan} \\ \vspace{2pt}
-    \small 978-325-1925 $|$ \small Boston, MA \\ \vspace{2pt}
+    \small 978-325-1925 $|$ \small Reading, MA \\ \vspace{2pt}
     \href{mailto:sultan.a@northeastern.edu}{\underline{sultan.a@northeastern.edu}} $|$ 
     \href{https://linkedin.com/in/aly-sultan/}{\underline{linkedin.com/in/aly-sultan/}} $|$
     \href{https://github.com/asultan123}{\underline{github.com/asultan123}}
@@ -147,7 +147,7 @@
         \resumeItem{Estimated HERO's latency and energy consumption using a Python-SystemC based simulation environment (HERO-Sim)}
         \resumeItem{Created a SystemC model of a novel programmable memory primitive called Self Addressable Memory (SAM) used in statically scheduling dataflows in neural network accelerator architectures}
         \resumeItem{Implemented a SAM program compiler that generates data movement programs from convolution layer descriptions to orchestrate on-chip data movement between SAMS in HERO}
-        \resumeItem{Supervised and mentored team of three undergraduate students in:}
+        \resumeItem{Supervised and mentored a team of three undergraduate students in:}
           \resumeItemListStart
           \resumeItem{Implementing SAMs in Verilog}
           \resumeItem{Integrating HERO into Xilinx's SystemC+QEMU simulation environment}
@@ -159,13 +159,13 @@
 %-----------PROJECTS-----------
 \section{Projects} % add neu 
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Integer Linear Program based scheduler for multi-core processors} $|$ \emph{Python, Pyomo, Gurobi}}{2021}
-          \resumeItemListStart
-            \resumeItem{Implemented an ILP-based scheduling model to schedule applications statically on a multicore processor }
-            \resumeItem{Model was generated using python and the pyomo library and optimized with the Gurobi solver }
-            \resumeItem{Successfully generated optimal schedules for a variety of application sizes and core count configurations}
-          \resumeItemListEnd
+    % \resumeProjectHeading
+    %       {\textbf{Integer Linear Program based scheduler for multi-core processors} $|$ \emph{Python, Pyomo, Gurobi}}{2021}
+    %       \resumeItemListStart
+    %         \resumeItem{Implemented an ILP-based scheduling model to schedule applications statically on a multicore processor }
+    %         \resumeItem{Model was generated using python and the pyomo library and optimized with the Gurobi solver }
+    %         \resumeItem{Successfully generated optimal schedules for a variety of application sizes and core count configurations}
+    %       \resumeItemListEnd
       % \resumeProjectHeading
       %     {\textbf{Accelerating Domain Design Space Exploration With CUDA} $|$ \emph{C++, CUDA}}{Spring 2020}
       %     \resumeItemListStart
@@ -176,8 +176,8 @@
           {\textbf{Cache Optimization for CNN Inference} $|$ \emph{C, Darknet, Intel Pin}}{2019}
           \resumeItemListStart
             \resumeItem{Integrated Intel Pin with the Darknet framework to determine the effect of cache configurations on CNN inference}
-            \resumeItem{Explored effects of cache hierarchy levels, sizing and replacement policy on data movement to and from DRAM during CNN inference} % Result of that exploration
-            \resumeItem{Cache sizing was found to have the greatest impact on hit rate and reducing data movement to and from DRAM} % Result of that exploration
+            \resumeItem{Explored effects of cache hierarchy levels, sizing, replacement policy, and prefetching on hit rate} % Result of that exploration
+            \resumeItem{Cache sizing and associativity was found to have the greatest impact on hit rate} % Result of that exploration
           \resumeItemListEnd
         \resumeProjectHeading
           {\textbf{Darknet Convolution Inference accelerator} $|$ \emph{C, Darknet, Vivado HLS}}{2019}
@@ -187,6 +187,16 @@
             \resumeItem{Integrated accelerator into the Darknet framework}
             \resumeItem{Accelerated inference time of the tiny darknet network by a factor of ~2X over CPU Baseline on a Zynq-7020 soc}
           \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{Backend synthesis of a Gaussian Noise Generator} $|$ \emph{Synopsys ICC, Design compiler}}{2018}
+        \resumeItemListStart
+          \resumeItem{Synthesized a Gaussian noise generator using the FreePDK45 Tech node}
+          \resumeItem{Design achieved the following properties: }
+          \resumeItemListStart
+            \resumeItem{A max clock rate of 275 Mhz with clear LVS and DRC and no setup/hold time violations}
+            \resumeItem{Area utilization of 75\% with total area equal to 27000 $um^2$}
+          \resumeItemListEnd
+        \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %
@@ -197,7 +207,7 @@
           {\textbf{A Compact Low-Power Mitchell-Based Error Tolerant Multiplier} $|$ \emph{Verilog, Matlab} }{2018}
           \resumeItemListStart
             \resumeItem{Developed a novel approxmiate multiplier architecture in Verilog and evaluated it's numerical accuracy in JPEG compression using MATLAB }
-            \resumeItem{Design improved power-delay-product by 1.9X with only 20\% reduction in peak signal-to-noise ratio \\ in JPEG compression compared to a Xilinx Zynq-7020 DSP}
+            \resumeItem{Design improved power-delay-product by 1.9X with only 20\% reduction in peak signal-to-noise ratio \\ in JPEG compression compared to a Xilinx Zynq-7020 DSP at 16 Bit fixed point precision}
             \resumeItem{Published and presented findings at NGCAS, Malta}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -209,8 +219,8 @@
     \small{\item{
      \textbf{Languages}{: Python, C/C++, SystemC, Matlab, Verilog} \\
      \textbf{Framework}{: Intel Pin, Darknet} \\
-     \textbf{Developer Tools}{: Git, Docker, VS Code, Vivado, Vivado HLS, QEMU, Gurobi} \\
-     \textbf{Libraries}{: PyTorch, Numpy, Matplotlib, Pyomo}
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Vivado, Vivado HLS, QEMU, Synopsys ICC, Design compiler} \\
+     \textbf{Libraries}{: PyTorch, Numpy, Matplotlib}
     }}
  \end{itemize}
 
