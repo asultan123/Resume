@@ -141,26 +141,28 @@
   \resumeSubHeadingListStart
   \resumeSubheading
   {Graduate Software Engineering Intern}{2022 -- Present}
-  {SSM Datacenter Simulation, Intel}{Part Time, Remote}
+  {System Simulation and Modeling Group, Intel}{Part Time, Remote}
   \resumeSubSubheading{AI Cost Reduction in Simics SWCI}{}
   \resumeItemListStart
-  \resumeItem{Developed an AI solution to predict regression test failures based on developer source changes, aiming to save computational resources by running only tests that are likely to fail}
-  \resumeItem{Established a data collection pipeline from Splunk and GitHub's APIs, emphasizing data integrity with JSON schema and daily data health-check reports}
-  \resumeItem{Trained XGBoost model on data collected and achieved up to a 75\% reduction in tests run on GNR with a miss rate of 5.35\% for failing tests}
-  \resumeItem{Developed a tool for streamlined concurrent experiments on Intel's SimCloud}
+  \resumeItem{Developed an AI solution to predict regression test failures based on developer source changes commited to Git}
+  \resumeItem{AI solution aims to save computational resources by running test subsets more likely to fail}
+  \resumeItem{Established a developer metadata collection pipeline managing up to 2000 builds per week across 2 Simics platforms using Jenkins, Splunk and GitHub's GarphQl API} 
+  \resumeItem{Validated collected data using JSON schema and produced daily data health-check reports}
+  \resumeItem{Trained XGBoost model on metadata collected and achieved up to a 40\% reduction in regression test compute time on Granite Rapids and Diamond Rapids Simics models with a miss rate of 5.35\% for failing tests}
+  \resumeItem{Productized AI solution by creating a Pretest prediction tool piloted by 5 developers in the SSM Server team}
   \resumeItem{Shared project insights at Intel's internal AI Everywhere Conference and the S3E Tech Exchange}
   \resumeItemListEnd
 
-  \resumeSubSubheading{Extending the autogen framework}{}
-  \resumeItemListStart
-  % \resumeItem{Assisted colleagues from external teams in adopting the autogen framework for diverse regression test applications}
-  \resumeItem{Transitioned SDSi, Virtualization, and IP patching regression tests in GNR from Simics CLI to Python within the Simics autogen framework, enhancing their availability to new platforms}
-  \resumeItemListEnd
+  % \resumeSubSubheading{Extending the autogen framework}{}
+  % \resumeItemListStart
+  % % \resumeItem{Assisted colleagues from external teams in adopting the autogen framework for diverse regression test applications}
+  % \resumeItem{Transitioned SDSi, Virtualization, and IP patching regression tests in GNR from Simics CLI to Python within the Simics autogen framework, enhancing their availability to new platforms}
+  % \resumeItemListEnd
 
-  \resumeSubSubheading{Refactoring S3M SWCI Jenkins pipeline}{}
+  \resumeSubSubheading{Secure Software Services Module (S3M) Firmware Integration Pipeline}{}
   \resumeItemListStart
-    \resumeItem{Revitalized a previously non-functional CI pipeline for S3M firmware integration, achieving consistent daily firmware deliveries for S3M}
-    \resumeItem{Devised a versatile shell library within Python, streamlining local and remote shell operations across geographically dispersed data centers due to tooling constraints}
+    \resumeItem{Established S3M's firmware integration pipeline, achieving daily FW deliveries for S3M's Simics model}
+    \resumeItem{Created a versatile Python shell library, streamlining local and remote build operations across geographically dispersed data centers}
   \resumeItemListEnd
 
 
@@ -169,32 +171,32 @@
   \resumeSubheading
     {Graduate Research Assistant}{2020 -- Present}
     {Embedded Systems Lab, Northeastern University}{Boston, MA}
-    \resumeSubSubheading{HERO Architecture}{}
+    \resumeSubSubheading{Hybrid General Matrix Multiplication and Direct Convolution Architecture (HERO)}{}
     \resumeItemListStart
-      \resumeItem{Developed a SystemC model for HERO, an innovative matrix multiplication and convolution accelerator for DNN inference}
+      \resumeItem{Developed a SystemC model for HERO, a novel matrix multiplication and convolution accelerator for DNN inference}
       \resumeItem{Introduced Self Addressable Memory (SAM) for adaptive on-chip data orchestration in HERO}
       \resumeItem{Established HERO-SIM, a PyTorch-SystemC based simulation framework for the HERO accelerator}
       \resumeItem{Evaluated HERO's efficacy on 695 DNNs, achieving up to 30X speedup and 300X energy savings over a workstation-class CPU}
-      \resumeItem{Currently finalizing HERO manuscript for publication}
+      \resumeItem{Submitted HERO manuscript to DAC 2024}
     \resumeItemListEnd
     \resumeSubSubheading{Categorized Ensemble Networks for Adversarial Attack Defence (CAEN)}{}
     \resumeItemListStart
       \resumeItem{Lead an AI defense project focused on bolstering ensemble network resilience against image-based adversarial attacks}
       \resumeItem{Developed a novel training methodology combining soft labeling with dissimilar label pairing, formulated the problem as an ILP, and solved it with Gurobi}
       \resumeItem{Training methodology achieved a 1.1X increase in robust accuracy over SOTA while reducing FLOPs by 16.8\%}
-      \resumeItem{Currently finalizing CAEN manuscript for publication}
+      \resumeItem{Submission of CAEN manuscript to SPIE's DCS24 conference pending}
     \resumeItemListEnd
 
 
-    \resumeSubheading
-      {Graduate Teaching Assistant}{Fall 2022}
-      {Electrical and Computer Engineering Department, EECE 7368}{Boston, MA}
-      \resumeItemListStart
+    % \resumeSubheading
+    %   {Graduate Teaching Assistant}{Fall 2022}
+    %   {Electrical and Computer Engineering Department, EECE 7368}{Boston, MA}
+    %   \resumeItemListStart
 
-      \resumeItem{Transitioned the course from SpecC to SystemC}
-      \resumeItem{Enhanced course realism by enabling usage of the Xilinx-QEMU co-simulation environment via Docker containers}
-      \resumeItem{Developed clear, structured lab exercises in SystemC, providing students with initial code and documentation}
-      \resumeItemListEnd
+    %   \resumeItem{Transitioned the course from SpecC to SystemC}
+    %   \resumeItem{Enhanced course realism by enabling usage of the Xilinx-QEMU co-simulation environment via Docker containers}
+    %   \resumeItem{Developed clear, structured lab exercises in SystemC, providing students with initial code and documentation}
+    %   \resumeItemListEnd
     
 
 
@@ -202,46 +204,46 @@
 
 
 
-%-----------PROJECTS-----------
-\section{Projects} % add neu 
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Integer Linear Program Based Scheduler for Multi-Core Processors} $|$ \emph{Python, Pyomo, Gurobi}}{2021}
-          \resumeItemListStart
-            \resumeItem{Implemented an ILP-based scheduling model to schedule applications statically on a multicore processor }
-            \resumeItem{Model was generated using python and the pyomo library and optimized with the Gurobi solver }
-            \resumeItem{Successfully generated optimal schedules for a variety of application sizes and core count configurations}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Accelerating Domain Design Space Exploration with CUDA} $|$ \emph{C++, CUDA}}{2020}
-          \resumeItemListStart
-            \resumeItem{Accelerated the application binding evaluation in the Domain-specific design space exploration for streaming applications algorithm developed by NEU's ESL team}
-            \resumeItem{Improved binding evaluation runtime by $\sim$100X over CPU baseline using CUDA}
-          \resumeItemListEnd
-        \resumeProjectHeading
-          {\textbf{Cache Optimization for CNN Inference} $|$ \emph{C, Darknet, Intel Pin}}{2019}
-          \resumeItemListStart
-            \resumeItem{Integrated Intel Pin with the Darknet framework to determine the effect of cache configurations on CNN inference}
-            \resumeItem{Explored effects of cache hierarchy levels, sizing and replacement policy on data movement to and from DRAM during CNN inference} % Result of that exploration
-          \resumeItemListEnd
-        \resumeProjectHeading
-          {\textbf{Darknet Convolution Inference Accelerator} $|$ \emph{C, Darknet, Vivado HLS}}{2019}
-          \resumeItemListStart
-            \resumeItem{Developed a General Matrix Multiplication (GEMM) accelerator using Vivado HLS}
-            % \resumeItem{Synthesized accelerator on a Zynq-7020 FPGA}
-            \resumeItem{Integrated accelerator into the Darknet framework}
-            \resumeItem{Accelerated inference time of the tiny darknet network by a factor of ~2X over CPU Baseline on a Zynq-7020 soc}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+% %-----------PROJECTS-----------
+% \section{Projects} % add neu 
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Integer Linear Program Based Scheduler for Multi-Core Processors} $|$ \emph{Python, Pyomo, Gurobi}}{2021}
+%           \resumeItemListStart
+%             \resumeItem{Implemented an ILP-based scheduling model to schedule applications statically on a multicore processor }
+%             \resumeItem{Model was generated using python and the pyomo library and optimized with the Gurobi solver }
+%             \resumeItem{Successfully generated optimal schedules for a variety of application sizes and core count configurations}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Accelerating Domain Design Space Exploration with CUDA} $|$ \emph{C++, CUDA}}{2020}
+%           \resumeItemListStart
+%             \resumeItem{Accelerated the application binding evaluation in the Domain-specific design space exploration for streaming applications algorithm developed by NEU's ESL team}
+%             \resumeItem{Improved binding evaluation runtime by $\sim$100X over CPU baseline using CUDA}
+%           \resumeItemListEnd
+%         \resumeProjectHeading
+%           {\textbf{Cache Optimization for CNN Inference} $|$ \emph{C, Darknet, Intel Pin}}{2019}
+%           \resumeItemListStart
+%             \resumeItem{Integrated Intel Pin with the Darknet framework to determine the effect of cache configurations on CNN inference}
+%             \resumeItem{Explored effects of cache hierarchy levels, sizing and replacement policy on data movement to and from DRAM during CNN inference} % Result of that exploration
+%           \resumeItemListEnd
+%         \resumeProjectHeading
+%           {\textbf{Darknet Convolution Inference Accelerator} $|$ \emph{C, Darknet, Vivado HLS}}{2019}
+%           \resumeItemListStart
+%             \resumeItem{Developed a General Matrix Multiplication (GEMM) accelerator using Vivado HLS}
+%             % \resumeItem{Synthesized accelerator on a Zynq-7020 FPGA}
+%             \resumeItem{Integrated accelerator into the Darknet framework}
+%             \resumeItem{Accelerated inference time of the tiny darknet network by a factor of ~2X over CPU Baseline on a Zynq-7020 soc}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
 
 %
 %-----------Publications-----------
-\section{Publications}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{J. Zhang, \textbf{A. Sultan}, M. Zandigohar, and G. Schirner, “Generating Unified Platforms Using Multigranularity Domain DSE (MG-DmDSE) Exploiting Application Similarities,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 42, no. 1. Institute of Electrical and Electronics Engineers (IEEE), pp. 280–293, Jan. 2023. doi: 10.1109/tcad.2022.3172373.}}
-  \small{\item{J. Zhang, \textbf{A. Sultan}, H. Tabkhi, and G. Schirner, “MG-DmDSE: Multi-Granularity Domain Design Space Exploration Considering Function Similarity,” 2021 Design, Automation \& Test in Europe Conference \& Exhibition (DATE). IEEE, Feb. 01, 2021. doi: 10.23919/date51398.2021.9474196.}}
-  \small{\item{\textbf{A. Sultan}, A. H. Hassan, and H. Mostafa, “A Compact Low-Power Mitchell-Based Error Tolerant Multiplier,” 2018 New Generation of CAS (NGCAS). IEEE, Nov. 2018. doi: 10.1109/ngcas.2018.8572297.}}
-\end{itemize}
+% \section{Publications}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%   \small{\item{J. Zhang, \textbf{A. Sultan}, M. Zandigohar, and G. Schirner, “Generating Unified Platforms Using Multigranularity Domain DSE (MG-DmDSE) Exploiting Application Similarities,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 42, no. 1. Institute of Electrical and Electronics Engineers (IEEE), pp. 280–293, Jan. 2023. doi: 10.1109/tcad.2022.3172373.}}
+%   \small{\item{J. Zhang, \textbf{A. Sultan}, H. Tabkhi, and G. Schirner, “MG-DmDSE: Multi-Granularity Domain Design Space Exploration Considering Function Similarity,” 2021 Design, Automation \& Test in Europe Conference \& Exhibition (DATE). IEEE, Feb. 01, 2021. doi: 10.23919/date51398.2021.9474196.}}
+%   \small{\item{\textbf{A. Sultan}, A. H. Hassan, and H. Mostafa, “A Compact Low-Power Mitchell-Based Error Tolerant Multiplier,” 2018 New Generation of CAS (NGCAS). IEEE, Nov. 2018. doi: 10.1109/ngcas.2018.8572297.}}
+% \end{itemize}
 
     % \resumeSubHeadingListStart
     %       \resumeProjectHeading{}{}
@@ -259,10 +261,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: \emph{Python, C/C++, SystemC, Matlab, Verilog}} \\
+     \textbf{Languages}{: \emph{Python, C/C++, SystemC}} \\
      \textbf{Framework}{: \emph{Intel Pin, Darknet}} \\
-     \textbf{Developer Tools}{: \emph{Git, Docker, VS Code, Vivado, Vivado HLS, QEMU, Gurobi}} \\
-     \textbf{Libraries}{: \emph{PyTorch, Numpy, Matplotlib, Pyomo}}
+     \textbf{Developer Tools}{: \emph{Git, Docker, Jenkins, QEMU, Simics, Gurobi}} \\
+     \textbf{Libraries}{: \emph{PyTorch, Numpy, Pyomo}}
     }}
  \end{itemize}
 
