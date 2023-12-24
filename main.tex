@@ -72,7 +72,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\textbf{\small#3}} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -124,9 +124,9 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Northeastern University}{Boston, MA}
-      {Ph.D. Computer Engineering}{Expected 2025}
+    % \resumeSubheading
+    %   {Northeastern University}{Boston, MA}
+    %   {Ph.D. Computer Engineering}{Present}
     \resumeSubheading
       {Northeastern University}{Boston, MA}
       {M.S. Electrical and Computer Engineering}{2023}
@@ -140,37 +140,26 @@
 \section{Experience}
   \resumeSubHeadingListStart
   \resumeSubheading
-  {Graduate Software Engineering Intern}{2022 -- Present}
-  {System Simulation and Modeling Group, Intel}{Part Time, Remote}
+  {Intel (System Simulation and Modeling Group)}{2022 -- Present}
+  {Graduate Software Engineering Intern}{Remote}
   \resumeSubSubheading{AI Cost Reduction in Simics SWCI}{}
   \resumeItemListStart
-  \resumeItem{Developed an AI solution to predict regression test failures based on developer source changes commited to Git}
-  \resumeItem{AI solution aims to save computational resources by running test subsets more likely to fail}
-  \resumeItem{Established a developer metadata collection pipeline managing up to 2000 builds per week across 2 Simics platforms using Jenkins, Splunk and GitHub's GarphQl API} 
+  \resumeItem{Designed and implemented an AI-driven tool to proactively predict regression test failures in Simics SWCI based on developer source changes commited to Git}
+  \resumeItem{AI solution aimed to save computational resources by running test subsets more likely to fail}
+  \resumeItem{Established a developer metadata collection pipeline managing up to 2000 builds per week across two Simics platforms using Jenkins, Splunk and GitHub's GraphQL API} 
   \resumeItem{Validated collected data using JSON schema and produced daily data health-check reports}
   \resumeItem{Trained XGBoost model on metadata collected and achieved up to a 40\% reduction in regression test compute time on Granite Rapids and Diamond Rapids Simics models with a miss rate of 5.35\% for failing tests}
-  \resumeItem{Productized AI solution by creating a Pretest prediction tool piloted by 5 developers in the SSM Server team}
+  \resumeItem{Productized AI solution by creating a Pretest Predict tool piloted by 5 developers in the SSM Server team}
   \resumeItem{Shared project insights at Intel's internal AI Everywhere Conference and the S3E Tech Exchange}
   \resumeItemListEnd
-
-  % \resumeSubSubheading{Extending the autogen framework}{}
-  % \resumeItemListStart
-  % % \resumeItem{Assisted colleagues from external teams in adopting the autogen framework for diverse regression test applications}
-  % \resumeItem{Transitioned SDSi, Virtualization, and IP patching regression tests in GNR from Simics CLI to Python within the Simics autogen framework, enhancing their availability to new platforms}
-  % \resumeItemListEnd
-
-  \resumeSubSubheading{Secure Software Services Module (S3M) Firmware Integration Pipeline}{}
+  \resumeSubSubheading{IP Firmware Integration Pipeline [Confidential]}{}
   \resumeItemListStart
-    \resumeItem{Established S3M's firmware integration pipeline, achieving daily FW deliveries for S3M's Simics model}
+    \resumeItem{Established a mission critical IP Simics model's firmware integration pipeline, achieving daily FW deliveries}
     \resumeItem{Created a versatile Python shell library, streamlining local and remote build operations across geographically dispersed data centers}
   \resumeItemListEnd
-
-
-
-
   \resumeSubheading
-    {Graduate Research Assistant}{2020 -- Present}
-    {Embedded Systems Lab, Northeastern University}{Boston, MA}
+    {Northeastern University (Embedded Systems Lab)}{2020 -- Present}
+    {Graduate Research Assistant}{Boston, MA}
     \resumeSubSubheading{Hybrid General Matrix Multiplication and Direct Convolution Architecture (HERO)}{}
     \resumeItemListStart
       \resumeItem{Developed a SystemC model for HERO, a novel matrix multiplication and convolution accelerator for DNN inference}
@@ -186,7 +175,6 @@
       \resumeItem{Training methodology achieved a 1.1X increase in robust accuracy over SOTA while reducing FLOPs by 16.8\%}
       \resumeItem{Submission of CAEN manuscript to SPIE's DCS24 conference pending}
     \resumeItemListEnd
-
 
     % \resumeSubheading
     %   {Graduate Teaching Assistant}{Fall 2022}
